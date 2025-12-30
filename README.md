@@ -1,18 +1,70 @@
-# Spring_11_Aprendizaje_automatico_enfocado_en_negocios
-Christian Solis, Project 11, Data Scientist Bootcamp (Tripleten)
-Este proyecto consiste en desarrollar un modelo de regresión lineal para predecir el volumen de reservas en pozos petrolíferos y seleccionar las mejores regiones para la apertura de 200 nuevos pozos.
+# Data-Driven Insights: Oil Well Profitability and Region Selection
 
-Se trabajó con datos sintéticos de tres regiones, aplicando técnicas de validación de modelos, selección de pozos con mayor potencial y análisis de riesgos con bootstrapping.
-El objetivo fue identificar la región más rentable, manteniendo un riesgo de pérdida inferior al 2.5% y maximizando la ganancia esperada con un presupuesto de 100 millones de dólares.
+This project focuses on building a linear regression model to predict oil reserve volumes and identify the most profitable region for opening 200 new oil wells. Using synthetic data from three regions, the analysis combines predictive modeling, risk assessment, and profit optimization to support data-driven investment decisions.
 
-Principales tareas:
+# Objective
 
-Preparación y análisis exploratorio de datos.
+To test the following hypothesis:
 
-Entrenamiento y validación de modelos de regresión lineal.
+Oil reserve volume predictions can be used to select a region that maximizes expected profit while keeping the risk of loss below 2.5%, given a fixed investment budget of $100 million.
 
-Selección de los 200 pozos con mayor volumen estimado de reservas por región.
+# 🛠️ Technologies Used
 
-Cálculo de ganancias potenciales y riesgos con simulaciones bootstrap.
+Python: Pandas, NumPy, Scikit-learn
 
-Recomendación final de la región óptima para inversión.
+Jupyter Notebook: Interactive environment for modeling and analysis
+
+Synthetic Datasets: Oil well data from three different regions
+
+# Key Steps
+# Data Description
+
+Loaded and explored datasets from three regions.
+
+Analyzed feature distributions and target variable behavior.
+
+Verified data quality and readiness for modeling.
+
+# Data Preprocessing and Exploration
+
+Prepared the data for regression modeling.
+
+Conducted exploratory data analysis to understand relationships between features and oil reserve volume.
+
+# Model Development
+
+Trained linear regression models for each region.
+
+Evaluated model performance using validation techniques.
+
+Compared prediction accuracy across regions.
+
+# Well Selection Strategy
+
+Predicted oil reserve volumes for all wells.
+
+Selected the top 200 wells with the highest estimated reserves in each region.
+
+Calculated expected profits based on predicted volumes and fixed development costs.
+
+# Risk Analysis with Bootstrapping
+
+Applied bootstrap simulations to estimate profit distributions.
+
+Measured the probability of loss for each region.
+
+Evaluated expected profit while enforcing a maximum loss risk of 2.5%.
+
+# Results
+
+The analysis shows that:
+
+Linear regression models provide reliable reserve volume predictions.
+
+Profitability varies significantly across regions.
+
+Bootstrapping enables robust estimation of financial risk.
+
+One region delivers the highest expected profit while maintaining an acceptable risk level below 2.5%.
+
+Based on these findings, the project identifies the optimal region for investment and supports a confident, data-driven recommendation for opening new oil wells.
